@@ -7,7 +7,7 @@ or(value, defaultValue) =>
     ? defaultValue is Function ? defaultValue() : defaultValue 
     : value; 
 
-bool falsey(value) => value == null || value == false || value == '' || value == 0 || value == double.NAN;
+bool falsey(value) => value == null || value == false || value == '' || value == 0 || value == double.nan;
 
 bool truthy(value) => !falsey(value);
 
